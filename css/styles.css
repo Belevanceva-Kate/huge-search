@@ -17,6 +17,7 @@ body {
 header {
 	padding: 40px 0 20px 0;
 }
+
 form {
 	margin: 0 auto;
 	position: relative;
@@ -68,17 +69,19 @@ button:focus {
 
 main {
 	width: 80%;
-	margin: 0px auto;
+	margin: 0 auto;
 	font-size: 14px;
 	text-align: center;
+	font-size: 0;
 }
 
 div {
 	width: 30%;
+	font-size: 14px;
 }
 
 div:not(:last-of-type) {
-	margin-right: 60px;
+	margin-right: 5%;
 }
 
 h2 {
@@ -92,7 +95,7 @@ div, a img, a p {
 }
 
 div {vertical-align: top; text-align: left;}
-a img, ap p {vertical-align:middle;}
+a img, a p {vertical-align:middle;}
 
 li {
 	list-style: none;
@@ -116,8 +119,19 @@ li a:hover {
 }
 
 img {
-	border-radius: 50%;
 	margin-right: 10px;
+}
+
+.img__round {
+	border-radius: 50%;
+}
+
+li p {
+	display: inline-block;
+	vertical-align: middle;
+	max-height: 35px;
+	overflow: hidden;
+	width: calc(100% - 50px - 10px - 30px); /*считает % и пиксели*/
 }
 
 p {
